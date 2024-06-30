@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+ img, video, audio {
+    width: 100%;
+}
+nav{
+    background-color: orange;
+    padding:16px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 18px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+/* welcome section */
+.welcome {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+    padding:12px;
+}
+.welcome h1{
+    font-size: 50px;
+    text-align: center;
+}
+/* content section */
+.content{
+    margin-top: 60px;
+    background-color: orange;
+    padding:60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+.content h2{
+    text-align: center;
+    font-size: 40px;
+}
+.content h2 span{color:dodgerblue;}
+.content img {
+    border-radius:10px;
+}
+/* hairstyle section */
+#hairstyles{
+    margin:60px auto 0px;
+    padding:0px 40px;
+}
+#hairstyles h2{
+    text-align: center;
+    color: orange;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+#hairstyles ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:24px;
+    font-size: 30px;
+}
+/* pricing section */
+#pricing{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 0px 30px;
+}
+#pricing h2{
+    text-align: center;
+    color: orange;
+    font-size:35px;
+}
+#pricing table {
+    border-collapse: collapse;
+}
+#pricing table th,td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+    width:50%;
+    font-size:20px;
+}
+#pricing table tr:nth-child(even) {
+    background-color:#ddd;
+}
+/* media section */
+#media {
+    background-color:black;
+    padding: 60px 20px;
+    margin-top:60px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap:20px;
+}
+#media h2{
+    text-align: center;
+    color:orange;
+    font-size:35px;
+}
+#media h4{
+    color:white;
+    font-size:25px;
+}
+/* About us section */
+#aboutus{
+    margin-top:60px;
+    padding: 0px 30px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+#aboutus h2{
+    color: orange;
+    font-size:40px;
+}
+#aboutus p{
+    font-size:25px;
+}
+/* contact section */
+#contactus {
+    margin-top:60px;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    margin-top: 60px;
+    padding:60px 60px;
+}
+
+#contactus h2{
+    color:white;
+    font-size:40px;
+}
+#contactus h3 {
+    text-align: center;   
+}
+#contactus form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+#contactus form label{
+    font-size: 18px;
+}
+#contactus form input,
+#contactus form textarea{
+    padding: 10px 12px;
+    border: orange;
+    border-radius: 4px;
+}
+#contactus form button{
+    background-color:black;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen { */
+    /* img, video, audio { */
+        /* width: 100%;    */
+}

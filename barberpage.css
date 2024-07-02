@@ -180,11 +180,7 @@ nav a:hover {
 @media screen and (max-width:600px){
     body{
         flex-direction: column;
-    }  
-    /* nav a{
-        font-size: 14px;
-    } */
-      
+    }        
 }
 /* for small devices; portrait tablets and large phones */
 @media screen and (min-width:600px){

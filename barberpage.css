@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     box-sizing: border-box;
 }
@@ -45,7 +45,6 @@ nav a:hover {
 }
 .content h2{
     text-align: center;
-    font-size: 35px;
 }
 .content h2 span{color:dodgerblue;}
 .content img {
@@ -53,21 +52,19 @@ nav a:hover {
 }
 /* hairstyle section */
 #hairstyles{
-    margin:60px auto 0px;
-    padding:0px 40px;
+    margin:60px auto 0px auto;
+    padding:0px 20px;
 }
 #hairstyles h2{
     text-align: center;
     color: orange;
     margin-bottom: 20px;
-    font-size: 35px;
-    font-weight: bolder;
 }
 #hairstyles ul{
     display: flex;
     flex-wrap: wrap;
-    gap:24px;
-    font-size:30px;
+    gap:20px;
+    font-size: 19px;
 }
 /* pricing section */
 #pricing{
@@ -108,11 +105,9 @@ nav a:hover {
 #media h2{
     text-align: center;
     color:orange;
-    font-size:35px;
 }
 #media h4{
     color:white;
-    font-size:25px;
 }
 /* About us section */
 #aboutus{
@@ -132,16 +127,14 @@ nav a:hover {
 }
 /* contact section */
 #contactus {
-    margin-top:60px;
-    padding: 60px 30px;
+    margin-top:50px;
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
     gap:20px;
     align-items: center;
     justify-content: center;
     background-color: orange;
-    margin-top: 60px;
-    padding:60px 60px;
 }
 
 #contactus h2{
@@ -176,39 +169,62 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* for extra small devices; phone */
-@media screen and (max-width:600px){
-    body{
-        flex-direction: column;
-    }        
-}
 /* for small devices; portrait tablets and large phones */
-@media screen and (min-width:600px){
-    body{
-        flex-direction: column;
-    }    
+@media screen and (min-width:576px){
+    #hairstyles ul{
+        justify-content: center;
+        font-size: 16px;
+    }   
+
 }
 /* for medium devices (tablet) */
 @media screen and (min-width:768px){
-    body{
-        flex-direction: column;
-    } 
-    #hairstyles ul{
-        display: flex;
-        flex-wrap: wrap;
-        gap:30px;
-        font-size:25px;
+    .content h2{
+        max-width: 550px;
+        margin: 0 auto;
     }
+    #contactus h3{
+        max-width: 400px; 
+        margin:0; 
+     }
+     #contactus form {
+        width: 300px;
+     }
 }
 /* for large devices (laptops/desktop) */
 @media screen and (min-width:992px){
-    body{
-        flex-direction: column;
-    } 
-    #hairstyles ul{
-        display: flex;
-        flex-wrap: wrap;
-        gap:45px;
-        font-size: 30px;
-    }    
+    .welcome img {
+            max-width: 70%;
+    }
+    .content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .content img {
+        width: 400px;
+    }
+    .content h2 {
+        text-align: left;
+        width: 400px;
+    }
+    #media audio, video {
+        max-width: 50%;
+    }
+}
+/* for Extra large devices (large desktops) */
+@media screen and (min-width:1200px){
+    #hairstyles {
+        max-width: 900px;
+    }
+    #pricing {
+        max-width: 900px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    #aboutus{
+        max-width:1000px;
+        margin-left:auto;
+        margin-right: auto;
+    }
 }
